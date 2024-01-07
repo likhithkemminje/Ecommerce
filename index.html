@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Interio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!---navigation start--->
+    <nav>
+      <div class="menu-icon">
+        <span class="fas fa-bars"></span>
+      </div>
+      <div class="logo">Interio</div>
+      <div class="nav-items">
+              <li><a href="#">Home</a></li> 
+              <li><a href="bedroom.html">Designs</a></li>
+              <li><a href="#designs">Order now</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+      </div>
+      <div class="search-icon">
+       <span class="fas fa-search"></span>
+      </div>
+     <div class="cancel-icon">
+      <span class="fas fa-times"></span>
+     </div>
+     <form action="#">
+        <input type="search" class="search-data" placeholder="Search" required>
+        <button type="submit" class="fas fa-search"></button>
+      </form>
+</nav>
+<!---iamges start--->
+<div class="slider">
+  <div class="sliderchild">
+    <div class="imagecon"><span class="animate__animated animate__zoomIn">KITCHEN</span></div>
+    <div class="imagecon"><span class="animate__animated animate__zoomIn">BEDROOM</span></div>
+    <div class="imagecon">HALL</div>
+    <div class="imagecon">OFFICE</div>
+    <div class="imagecon">PRAYER HALL</div>
+  </div>
+</div>
+<div class="offer">
+  <h1 class="animate__animated animate__flash animate__delay-1s animate__infinite animate__slower">20% off</h1>
+  <h4>from May 10th to May 20th</h4>
+</div>
+<!---content start--->
+<div  class="designs" id="designs">
+  <div class="pics">
+  <div class="box zone">
+  <img src="images/hall.jpg">
+  <p>Trusted results for Large Living Room Designs. Search for the best results! Unlimited Access. The Best Resources. Privacy Friendly. 100% Secure. Always Facts. Services: Best Results, Explore Now, New Sources, Best in Search.
+  </p>
+  <center><button class="view"><a href="hall.html">View More</a></button></center>
+  </div>
+  
+  
+  <div class="box zone">
+  <img src="images/kitchen.jpg">
+  <p> A modern kitchen interior design doesn’t have to be made necessarily by a famous interior designer. You can just make it yourself if you have the big picture in your head and if you have a few good kitchen design ideas from which to draw your inspiration.
+  </p>
+  <center><button  class="view"><a href="kitchen.html">View More</a></button></center>
+  </div>
+  
+  <div class="box zone">
+  <img src="images/bathroom.jpg">
+  <p>Rustic style bathrooms use wood to offset the colours of the walls and and try to balance the desire for a homely space with elegance and class. Bathroom decorating ideas for rustic rooms tend to include items like locally grown flowers, while large luxurious baths are another common design theme.</p>
+  <center><button class="view"><a href="bathroom.html">View more</a></button></center>
+  </div>
+  
+  
+  <div class="box zone">
+  <img src="images/bedroom.jpg">
+  <p>The bedroom interior design is extremely important in order to provide that instant feel of relaxation and here are a few tips: the first thing that meets the eyes are the colors used on the walls, carpets and bed set so, they all must be soothing in pastel colors in order to provide a relaxing effect.
+  </p><center><button class="view"><a href="bedroom.html">View More</a></button></center>
+  </div>
+  
+  
+  <div class="box zone">
+  <img src="images/office.jpg">
+  <p>An office interior design sets off the overall mood and productivity in a workplace and this is boosted by a comfortable, inviting atmosphere. However, well-designed office space also helps make an impact on the success of any business. Offices that are the most productive combines the comforts of home and a professional business image.
+  </p><center><button class="view"><a href="office.html">View More</a></button></center>
+  </div>
+  
+  
+  <div class="box zone">
+  <img src="C:\Users\LIKITH\Desktop\project\images\8p.jpg">
+  <p>This elegantly designed prayer corner is ideal for houses with space constraints.Tucked away cosily in a corner of the living room, a wooden panel with organic patterns divides the hall from this oasis of calm. A niche space for prayer can easily be designed to fit your home no matter how small it may be.
+  </p><center><button class="view"><a href="prayerhall.html">View More</a></button></center>
+  </div>
+  </div>
+    </div>
+    <marquee>Thankyou for Visiting our site.For more information Contact Us</marquee>
+<!-- -footer start- -->
+<div class="contact" id="contact">
+    <h2><span>Contact Us</span></h2>
+        <a href="https://mailto:likhithkemminje@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/likhith35/"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/likhithkemminje"><i class="fab fa-twitter"></i></a>
+  </div><hr>
+  <footer>
+    <span>Copyright&#169 2022 | All Rights Reserved | Created by Likhith,Neha</span>
+  </footer>
+<script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    menuBtn.onclick = ()=>{
+      items.classList.add("active");
+      menuBtn.classList.add("hide");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = ()=>{
+      items.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      searchBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      form.classList.remove("active");
+      cancelBtn.style.color = "#ff3d00";
+    }
+    searchBtn.onclick = ()=>{
+      form.classList.add("active");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+  </script>
+
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="form.css">
+        <title>Form</title>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+	<header><a href="index.html"><i class="fas fa-home fa-5x"></i></a></header>
+	<form id="form" action="http://localhost:8080/store-contact" method="POST">
+		<div class="row-tab">
+			<div class="label-tab">
+				<label for="name">* Name:</label>
+			</div>
+			<div class="input-tab">
+				<input type="text" id="name" name="name" placeholder="ex:Akshay Sharma" required>
+			</div>
+		</div>
+		<div class="row-tab">
+			<div class="label-tab">
+				<label for="mail">* Email:</label>
+			</div>
+			<div class="input-tab">
+				<input type="email" id="mail" name="email" placeholder="ex:akshay@gmail.com" required />
+			</div>
+		</div>
+		<div class="row-tab">
+			<div class="label-tab">
+				<label for="age">* Age:</label>
+			</div>
+			<div class="input-tab">
+				<input type="number" id="age" name="age" min="18" max="60" placeholder="Age" required />
+			</div>
+		</div>
+		<div class="row-tab">
+			<div class="label-tab">
+				<label for="name">* Mobile number 1: </label>
+			</div>
+			<div class="input-tab">
+				<input type="number" id="mobilePrimary" name="mobile_primary" placeholder="Enter your number"
+					required />
+			</div>
+		</div>
+		<div class="row-tab">
+			<div class="label-tab">
+				<label for="name">Mobile number 2: </label>
+			</div>
+			<div class="input-tab">
+				<input type="number" id="mobileSecondary" name="mobile_secondary" placeholder="Enter your number" />
+			</div>
+		</div>
+		<div class="row-tab">
+			<div class="select-label">
+				<label for="like">Category</label>
+			</div>
+			<div class="select-input">
+				<select name="like" id="like">
+					<option disabled="disabled" selected> Select an option</option>
+					<option value="kitchen">Kitchen</option>
+					<option value="bedroom">Bedroom</option>
+					<option value="hall">Hall</option>
+					<option value="bathroom">Bathroom</option>
+					<option value="office">Office</option>
+					<option value="prayer hall">Prayer hall</option>
+				</select>
+			</div>
+		</div>
+		<div class="row-tab">
+			<div class="label-tab">
+				<label for="name">* Address:</label>
+			</div>
+			<div class="input-tab">
+				<textarea name="address" required></textarea>
+			</div>
+		</div>
+		<div class="row-tab">
+			<div class="label-tab">
+				<label for="landMark">* Landmark:</label>
+			</div>
+			<div class="input-tab">
+				<input type="text" id="landMark" name="land_mark" required>
+			</div>
+		</div>
+		<div class="row-tab">
+			<div class="label-tab">
+				<label for="number">* Pincode:</label>
+			</div>
+			<div class="input-tab">
+				<input type="number" id="pincode" name="pincode" required>
+			</div>
+		</div>
+		<input type="submit" value="Submit">
+		<input type="reset" value="Reset">
+		</div>
+	</form>
+	<div class="contact" id="contact">
+		<h2><span>Contact</span></h2>
+		<a href="#"><i class="fas fa-envelope"></i></a>
+		<a href="#"><i class="fab fa-facebook"></i></a>
+		<a href="#"><i class="fab fa-instagram"></i></a>
+		<a href="#"><i class="fab fa-twitter"></i></a>
+	</div>
+	<footer>
+		<span>Copyright&#169 2020 | All Rights Reserved</span>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$("#form").submit(function (event) {
+			// '''event.preventDefault();
+			// $.ajax({
+			// 	url: $('#form').attr('action'),
+			// 	type: $('#form').attr('method'),
+			// 	data: $('#form').serialize(),
+			// 	dataType: 'json',
+			// 	success: function (result) {
+			// 		console.log(result);
+			// 		alert(result.message);
+			// 	},
+			// 	error: function (error) {
+			// 		console.log(error);
+			// 	}
+			// });
+			alert("Form Submitted Succesfully!!");
+		});		
+	</script>
+</body>
+
+</html>
